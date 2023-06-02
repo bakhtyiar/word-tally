@@ -1,29 +1,186 @@
+<!DOCTYPE html>``
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" type="text/css" href="style.css" />
-		<title>Document</title>
-	</head>
-	<body>
-		<div class="windowWrapper">
-			<h1>WORD TALLY</h1>
-			<p>Click button parse to collect word</p>
-			<div class="buttonsWrapper">
-				<button class="parseButton">Parse</button>
-				<button class="clear">Clear</button>
-			</div>
-			<form>
-				<div class="filtersWrapper">
-					<div class="showGreaterWrapper">
-						Min repeats
-						<input class="filterCounters" type="text" value="1" />
-					</div>
-				</div>
-			</form>
-			<ol class="wordsList"></ol>
-		</div>
-		<script src="main.js"></script>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="main-header">word tally</h1>
+      <div class="content">
+        <div class="tabs__wrapper">
+          <!-- Tab links START-->
+          <div class="tab">
+            <button
+              class="tablinks"
+              onclick="openTab(event, 'filter-tab')"
+              id="defaultOpen"
+            >
+              Filter
+            </button>
+            <button class="tablinks" onclick="openTab(event, 'account-tab')">
+              Account
+            </button>
+          </div>
+          <!-- Tab links END-->
+          <!-- Tab content START-->
+          <div id="filter-tab" class="tabcontent">
+            <div class="tabcontent__wrapper">
+              <p class="current-site-address">www.phDocs.com</p>
+              <div class="filter-inputs__wrapper">
+                <div class="min-repeats__wrapper">
+                  <label for="min-repeats__input">min rep.</label>
+                  <input type="text" id="min-repeats__input" placeholder="1" />
+                </div>
+                <div class="search-word__wrapper">
+                  <label for="search-word__input">search w.</label>
+                  <input
+                    type="text"
+                    id="search-word__input"
+                    placeholder="watermelon"
+                  />
+                </div>
+              </div>
+              <div class="filter-buttons__wrapper">
+                <button class="parse-button" type="submit">Parse</button>
+                <button class="clear-button" type="button">Clear</button>
+              </div>
+              <div class="parsed-words__wrapper">
+                <ol class="parsed-words__list">
+                  <li class="parsed-words__list-item parsed-word">
+                    <input type="checkbox" id="parsed-word__1" />
+                    <label class="parsed-word__self-word" for="parsed-word__1">
+                      abcdef : 1001
+                    </label>
+                  </li>
+                  <li class="parsed-words__list-item parsed-word">
+                    <input type="checkbox" id="parsed-word__2" />
+                    <label class="parsed-word__self-word" for="parsed-word__2">
+                      abcdefsfdgsdfgsdfgsdfgdgsfgsfgsdfg : 1000
+                    </label>
+                  </li>
+                  <li class="parsed-words__list-item parsed-word">
+                    <input type="checkbox" id="parsed-word__3" />
+                    <label class="parsed-word__self-word" for="parsed-word__3">
+                      abcdef
+                    </label>
+                  </li>
+                  <li class="parsed-words__list-item parsed-word">
+                    <input type="checkbox" />
+                    <label class="parsed-word__self-word"> abcdef </label>
+                  </li>
+                  <li class="parsed-words__list-item parsed-word">
+                    <input type="checkbox" />
+                    <label class="parsed-word__self-word"> abcdef </label>
+                  </li>
+                  <li class="parsed-words__list-item parsed-word">
+                    <input type="checkbox" />
+                    <label class="parsed-word__self-word"> abcdef </label>
+                  </li>
+                  <li class="parsed-words__list-item parsed-word">
+                    <input type="checkbox" />
+                    <label class="parsed-word__self-word"> abcdef </label>
+                  </li>
+                  <li class="parsed-words__list-item parsed-word">
+                    <input type="checkbox" />
+                    <label class="parsed-word__self-word"> abcdef </label>
+                  </li>
+                  <li class="parsed-words__list-item parsed-word">
+                    <input type="checkbox" />
+                    <label class="parsed-word__self-word"> abcdef </label>
+                  </li>
+                  <li class="parsed-words__list-item parsed-word">
+                    <input type="checkbox" />
+                    <label class="parsed-word__self-word"> abcdef </label>
+                  </li>
+                  <li class="parsed-words__list-item parsed-word">
+                    <input type="checkbox" />
+                    <label class="parsed-word__self-word"> abcdef </label>
+                  </li>
+                  <li class="parsed-words__list-item parsed-word">
+                    <input type="checkbox" />
+                    <label class="parsed-word__self-word"> abcdef </label>
+                  </li>
+                  <li class="parsed-words__list-item parsed-word">
+                    <input type="checkbox" />
+                    <label class="parsed-word__self-word"> abcdef </label>
+                  </li>
+                  <li class="parsed-words__list-item parsed-word">
+                    <input type="checkbox" />
+                    <label class="parsed-word__self-word"> abcdef </label>
+                  </li>
+                  <li class="parsed-words__list-item parsed-word">
+                    <input type="checkbox" />
+                    <label class="parsed-word__self-word"> abcdef </label>
+                  </li>
+                  <li class="parsed-words__list-item parsed-word">
+                    <input type="checkbox" />
+                    <label class="parsed-word__self-word"> abcdef </label>
+                  </li>
+                  <li class="parsed-words__list-item parsed-word">
+                    <input type="checkbox" />
+                    <label class="parsed-word__self-word"> abcdef </label>
+                  </li>
+                  <li class="parsed-words__list-item parsed-word">
+                    <input type="checkbox" />
+                    <label class="parsed-word__self-word"> abcdef </label>
+                  </li>
+                  <li class="parsed-words__list-item parsed-word">
+                    <input type="checkbox" />
+                    <label class="parsed-word__self-word"> abcdef </label>
+                  </li>
+                  <li class="parsed-words__list-item parsed-word">
+                    <input type="checkbox" />
+                    <label class="parsed-word__self-word"> abcdef </label>
+                  </li>
+                  <li class="parsed-words__list-item parsed-word">
+                    <input type="checkbox" />
+                    <label class="parsed-word__self-word"> abcdef </label>
+                  </li>
+                  <li class="parsed-words__list-item parsed-word">
+                    <input type="checkbox" />
+                    <label class="parsed-word__self-word"> abcdef </label>
+                  </li>
+                  <li class="parsed-words__list-item parsed-word">
+                    <input type="checkbox" />
+                    <label class="parsed-word__self-word"> abcdef </label>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div id="account-tab" class="tabcontent">
+            <div class="tabcontent__wrapper">
+              <h3>Current site</h3>
+              <a href="/users/google-oauth/" class="auth-button__wrapper">
+                <button class="auth-button">
+                  <img
+                    alt="Google sign-in"
+                    src="../assets/Google__G__Logo.svg.png"
+                  />
+                  Login with Google
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Tab content END-->
+      </div>
+      <div class="github-link__wrapper">
+        <div class="github-logotype" alt="github logotype"></div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+    <script src="./tabs-script.js"></script>
+  </body>
 </html>
