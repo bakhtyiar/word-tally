@@ -15,11 +15,18 @@ document.addEventListener("click", async e => {
 		browser.tabs.sendMessage(activeTab[0].id, { minRepeats }, response => {
 			let popularWords = JSON.parse(response);
 			popularWords.sort((a, b) => b[1] - a[1]);
-			for (let [word, count] of popularWords) {
+			popularWords.forEach(([word, count], index) => {
 				let liElement = document.createElement("li");
-				liElement.textContent = `${word} -> ${count} times`;
+				let labelElement = document.createElement("label");
+				let checkboxElement = document.createElement("input");
+				checkboxElement.setAttribute("type", "checkbox");
+				checkboxElement.id = `parsed-word__${index}`;
+				labelElement.textContent = `${word} -> ${count} times`;
+				labelElement.htmlFor = `${checkboxElement.id}`;
+				liElement.append(checkboxElement);
+				liElement.append(labelElement);
 				olElement.append(liElement);
-			}
+			});
 		});
 	} else if (e.target.classList.contains("clear-button")) {
 		olElement.textContent = "";
