@@ -270,15 +270,13 @@ body {
 }
 
 .content {
-  flex: 1 0 auto;
+  flex: 0 0 auto;
 }
 .github-link__wrapper {
-  flex: 0 0 auto;
+  flex: 1 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  margin-bottom: 16px;
 }
 .github-logotype {
   width: 20px;
