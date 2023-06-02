@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "Word Tally",
+	"author": "fiendrsy",
+	"version": "1.0",
+
+	"description": "Adds a browser action icon to the toolbar. Click the button to choose a beast. The active tab's body content is then replaced with a picture of the chosen beast. See https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Examples#beastify",
+	"homepage_url": "https://github.com/fiendrsy/word-tally",
+
+	"permissions": ["activeTab"],
+
+	"browser_action": {
+		"default_icon": "icons/beasts-32.png",
+		"default_title": "Word Tally",
+		"default_popup": "popup/index.html"
+	}
+}
