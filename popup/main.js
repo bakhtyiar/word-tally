@@ -3,7 +3,7 @@ let olElement = document.querySelector(".wordsList");
 
 document.addEventListener("click", async e => {
 	if (e.target.classList.contains("parseButton")) {
-		browser.tabs.executeScript(null, {
+		await browser.tabs.executeScript(null, {
 			file: "../content-script/parse.js",
 		});
 		let activeTab = await browser.tabs.query({
