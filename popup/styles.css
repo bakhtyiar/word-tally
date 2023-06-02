@@ -1,11 +1,12 @@
 html, body {
   height: 500px !important;
-  width: 250px !important;
+  width: 300px !important;
 }
 
 body {
   color: rgba(255, 255, 255, 0.9);
   background-color: rgba(22, 29, 35, 1);
+  margin: 24px;
 }
 
 @media (prefers-color-scheme: light) {
@@ -193,6 +194,8 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 300px;
+  overflow-y: auto;
 }
 
 .filter-inputs__wrapper {
@@ -238,6 +241,7 @@ button:hover {
 }
 
 .parsed-words__list {
+  margin-top: 0;
   list-style-type: none;
   padding-left: 0;
 }
