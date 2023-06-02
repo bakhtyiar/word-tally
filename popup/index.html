@@ -22,12 +22,11 @@
           <div class="tab">
             <button
               class="tablinks"
-              onclick="openTab(event, 'filter-tab')"
-              id="defaultOpen"
+              id="filterTab"
             >
               Filter
             </button>
-            <button class="tablinks" onclick="openTab(event, 'account-tab')">
+            <button class="tablinks" id="accountTab">
               Account
             </button>
           </div>
@@ -39,7 +38,7 @@
               <div class="filter-inputs__wrapper">
                 <div class="min-repeats__wrapper">
                   <label for="min-repeats__input">min rep.</label>
-                  <input type="text" id="min-repeats__input" placeholder="1" />
+                  <input type="text" id="min-repeats__input" value="1"/>
                 </div>
                 <div class="search-word__wrapper">
                   <label for="search-word__input">search w.</label>
@@ -61,98 +60,6 @@
                     <label class="parsed-word__self-word" for="parsed-word__1">
                       abcdef : 1001
                     </label>
-                  </li>
-                  <li class="parsed-words__list-item parsed-word">
-                    <input type="checkbox" id="parsed-word__2" />
-                    <label class="parsed-word__self-word" for="parsed-word__2">
-                      abcdefsfdgsdfgsdfgsdfgdgsfgsfgsdfg : 1000
-                    </label>
-                  </li>
-                  <li class="parsed-words__list-item parsed-word">
-                    <input type="checkbox" id="parsed-word__3" />
-                    <label class="parsed-word__self-word" for="parsed-word__3">
-                      abcdef
-                    </label>
-                  </li>
-                  <li class="parsed-words__list-item parsed-word">
-                    <input type="checkbox" />
-                    <label class="parsed-word__self-word"> abcdef </label>
-                  </li>
-                  <li class="parsed-words__list-item parsed-word">
-                    <input type="checkbox" />
-                    <label class="parsed-word__self-word"> abcdef </label>
-                  </li>
-                  <li class="parsed-words__list-item parsed-word">
-                    <input type="checkbox" />
-                    <label class="parsed-word__self-word"> abcdef </label>
-                  </li>
-                  <li class="parsed-words__list-item parsed-word">
-                    <input type="checkbox" />
-                    <label class="parsed-word__self-word"> abcdef </label>
-                  </li>
-                  <li class="parsed-words__list-item parsed-word">
-                    <input type="checkbox" />
-                    <label class="parsed-word__self-word"> abcdef </label>
-                  </li>
-                  <li class="parsed-words__list-item parsed-word">
-                    <input type="checkbox" />
-                    <label class="parsed-word__self-word"> abcdef </label>
-                  </li>
-                  <li class="parsed-words__list-item parsed-word">
-                    <input type="checkbox" />
-                    <label class="parsed-word__self-word"> abcdef </label>
-                  </li>
-                  <li class="parsed-words__list-item parsed-word">
-                    <input type="checkbox" />
-                    <label class="parsed-word__self-word"> abcdef </label>
-                  </li>
-                  <li class="parsed-words__list-item parsed-word">
-                    <input type="checkbox" />
-                    <label class="parsed-word__self-word"> abcdef </label>
-                  </li>
-                  <li class="parsed-words__list-item parsed-word">
-                    <input type="checkbox" />
-                    <label class="parsed-word__self-word"> abcdef </label>
-                  </li>
-                  <li class="parsed-words__list-item parsed-word">
-                    <input type="checkbox" />
-                    <label class="parsed-word__self-word"> abcdef </label>
-                  </li>
-                  <li class="parsed-words__list-item parsed-word">
-                    <input type="checkbox" />
-                    <label class="parsed-word__self-word"> abcdef </label>
-                  </li>
-                  <li class="parsed-words__list-item parsed-word">
-                    <input type="checkbox" />
-                    <label class="parsed-word__self-word"> abcdef </label>
-                  </li>
-                  <li class="parsed-words__list-item parsed-word">
-                    <input type="checkbox" />
-                    <label class="parsed-word__self-word"> abcdef </label>
-                  </li>
-                  <li class="parsed-words__list-item parsed-word">
-                    <input type="checkbox" />
-                    <label class="parsed-word__self-word"> abcdef </label>
-                  </li>
-                  <li class="parsed-words__list-item parsed-word">
-                    <input type="checkbox" />
-                    <label class="parsed-word__self-word"> abcdef </label>
-                  </li>
-                  <li class="parsed-words__list-item parsed-word">
-                    <input type="checkbox" />
-                    <label class="parsed-word__self-word"> abcdef </label>
-                  </li>
-                  <li class="parsed-words__list-item parsed-word">
-                    <input type="checkbox" />
-                    <label class="parsed-word__self-word"> abcdef </label>
-                  </li>
-                  <li class="parsed-words__list-item parsed-word">
-                    <input type="checkbox" />
-                    <label class="parsed-word__self-word"> abcdef </label>
-                  </li>
-                  <li class="parsed-words__list-item parsed-word">
-                    <input type="checkbox" />
-                    <label class="parsed-word__self-word"> abcdef </label>
                   </li>
                 </ol>
               </div>
@@ -181,5 +88,5 @@
       </div>
     </div>
     <script src="main.js"></script>
-	<script src="tabs-script.js"></script>
+    <script src="tabs.js"></script>
 </html>

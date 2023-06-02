@@ -25,7 +25,6 @@ body {
 
 /* for debug */
 * {
-  /* border: 1px solid gray; */
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
@@ -34,7 +33,6 @@ body {
 .tab {
   overflow: hidden;
   border-bottom: 1px solid rgba(240, 240, 240, 0.1);
-  /* background-color: #f1f1f1; */
   display: flex;
   justify-content: center;
 }
@@ -201,7 +199,6 @@ button:hover {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 18px;
-  /* justify-content: space-evenly; */
   margin-bottom: 16px;
 }
 
